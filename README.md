@@ -1,10 +1,12 @@
 # MERN Healthcare System
 
-A comprehensive web-based healthcare appointment booking system built with the MERN stack. This application allows patients to book appointments, doctors to manage their schedules, and administrators to oversee the system.
+A comprehensive web-based healthcare appointment booking system built with the MERN stack. This application allows patients to book appointments, and doctors to manage their schedules.
 
 ## Table of Contents
 
 - [Features](#features)
+- [Screenshots](#screenshots)
+- [Live Preview](#live-preview)
 - [Technologies Used](#technologies-used)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
@@ -13,26 +15,34 @@ A comprehensive web-based healthcare appointment booking system built with the M
 
 ## Features
 
-- **User Roles**: Separate dashboards for Patients, Doctors, and Admin.
+- **User Roles**: Separate dashboards for Patients, Doctors.
 - **Appointment Booking**: Patients can browse doctors and book appointments.
 - **Doctor Management**: Doctors can manage their availability and profile.
-- **Authentication**: Secure login and registration using JWT (JSON Web Tokens).
-- **Responsive Design**: Mobile-friendly interface built with React.
-- **Admin Dashboard**: manage users, doctors, and system settings.
+- **Authentication**: Secure login and registration using JWT.
+
+## Screenshots
+
+<img src="/public/assets/1.png" alt="1" width="75%">
+<img src="/public/assets/2.png" alt="2" width="75%">
+<img src="/public/assets/3.png" alt="3" width="75%">
+<img src="/public/assets/4.png" alt="4" width="75%">
+
+## Live Preview
+
+Click [here](https://mern-healthcare-system-1a3c.vercel.app/) to view live demo.
 
 ## Technologies Used
 
 **Backend:**
 
 - Node.js, Express.js
-- MongoDB (Mongoose)
-- JWT for Authentication
+- MongoDB
+- JWT Auth
 
 **Frontend:**
 
-- React (Create React App)
-- Context API for State Management
-- CSS Modules / Custom CSS
+- React
+- Tailwind CSS
 
 **Deployment:**
 
@@ -75,16 +85,12 @@ npm install
 Create a `.env` file in the `server` directory:
 
 ```bash
-PORT=5000
+PORT=5001
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 ```
 
 ### 4. Run the Project
-
-**Development Mode (Concurrent):**
-
-You can set up a root script to run both, or run them in separate terminals.
 
 Terminal 1 (Server):
 
@@ -101,18 +107,13 @@ npm start
 ```
 
 - Frontend: `http://localhost:3000`
-- Backend: `http://localhost:5000`
-
-## Live Demo
-
-- **Frontend**: [Vercel App URL](https://mern-healthcare-system-client.vercel.app/)
-  _(Replace with actual Vercel URL once known)_
-- **Backend API**: [Render Service URL](https://mern-healthcare-system.onrender.com)
+- Backend: `http://localhost:5001`
 
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/MianSaadTahir/mern-healthcare-system/issues).
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT [License](https://github.com/MianSaadTahir/mern-healthcare-system/blob/main/LICENSE).
