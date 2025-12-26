@@ -1,100 +1,118 @@
-# MERN Healthcare Appointment System
+# MERN Healthcare System
 
-This is a full-stack MERN (MongoDB, Express, React, Node.js) application for a Healthcare Appointment Management System.
+A comprehensive web-based healthcare appointment booking system built with the MERN stack. This application allows patients to book appointments, doctors to manage their schedules, and administrators to oversee the system.
 
-## 🚀 Features
+## Table of Contents
 
--   User authentication (patients, doctors, and admins) with JWT.
--   Patients can book, view, and cancel appointments.
--   Doctors can manage their profiles and appointments.
--   Admins can manage users, doctors, and appointments.
--   Responsive design.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 🛠️ Tech Stack
+## Features
 
--   **Frontend:** React.js, Context API, React Router, Axios
--   **Backend:** Node.js, Express.js, MongoDB, Mongoose, JWT
--   **Database:** MongoDB Atlas
+- **User Roles**: Separate dashboards for Patients, Doctors, and Admin.
+- **Appointment Booking**: Patients can browse doctors and book appointments.
+- **Doctor Management**: Doctors can manage their availability and profile.
+- **Authentication**: Secure login and registration using JWT (JSON Web Tokens).
+- **Responsive Design**: Mobile-friendly interface built with React.
+- **Admin Dashboard**: manage users, doctors, and system settings.
 
-## 📦 Installation
+## Technologies Used
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/mern-healthcare-system.git
-    cd mern-healthcare-system
-    ```
+**Backend:**
 
-2.  Install server dependencies:
-    ```bash
-    cd server
-    npm install
-    ```
+- Node.js, Express.js
+- MongoDB (Mongoose)
+- JWT for Authentication
 
-3.  Install client dependencies:
-    ```bash
-    cd ../client
-    npm install
-    ```
+**Frontend:**
 
-## ⚙️ Environment Variables
+- React (Create React App)
+- Context API for State Management
+- CSS Modules / Custom CSS
 
-Create a `.env` file in the `server` directory and add the following variables:
+**Deployment:**
 
+- Frontend: Vercel
+- Backend: Render
+- Database: MongoDB Atlas
+
+## Prerequisites
+
+- **Node.js** v14+ - [Download](https://nodejs.org/)
+- **MongoDB** - [Download](https://www.mongodb.com/try/download/community) or MongoDB Atlas account.
+
+## Usage
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/MianSaadTahir/mern-healthcare-system.git
+cd mern-healthcare-system
 ```
-MONGO_URI=<your_mongodb_uri>
-JWT_SECRET=<your_jwt_secret>
+
+### 2. Install Dependencies
+
+**Server:**
+
+```bash
+cd server
+npm install
+```
+
+**Client:**
+
+```bash
+cd ../client
+npm install
+```
+
+### 3. Environment Configuration
+
+Create a `.env` file in the `server` directory:
+
+```bash
 PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 ```
 
-## ▶️ Running the Application
+### 4. Run the Project
 
-1.  Start the backend server:
-    ```bash
-    cd server
-    npm run server
-    ```
+**Development Mode (Concurrent):**
 
-2.  Start the frontend client:
-    ```bash
-    cd client
-    npm start
-    ```
+You can set up a root script to run both, or run them in separate terminals.
 
-##  API Endpoints
+Terminal 1 (Server):
 
-### Auth
+```bash
+cd server
+npm run server
+```
 
--   `POST /api/auth` - Authenticate user and get token
--   `GET /api/auth` - Get logged in user
+Terminal 2 (Client):
 
-### Users
+```bash
+cd client
+npm start
+```
 
--   `POST /api/users` - Register a new user
+- Frontend: `http://localhost:3000`
+- Backend: `http://localhost:5000`
 
-### Doctors
+## Live Demo
 
--   `GET /api/doctors` - Get all doctor profiles
--   `GET /api/doctors/:id` - Get doctor profile by ID
--   `POST /api/doctors` - Create or update a doctor profile
--   `GET /api/doctors/me` - Get current doctor's profile
+- **Frontend**: [Vercel App URL](https://mern-healthcare-system-client.vercel.app/)
+  _(Replace with actual Vercel URL once known)_
+- **Backend API**: [Render Service URL](https://mern-healthcare-system.onrender.com)
 
-### Appointments
+## Contributing
 
--   `POST /api/appointments` - Book an appointment
--   `GET /api/appointments/my` - Get my appointments
--   `PUT /api/appointments/:id/cancel` - Cancel an appointment
--   `PUT /api/appointments/:id/status` - Update appointment status (for doctors)
+Contributions, issues, and feature requests are welcome!
 
-### Admin
+## License
 
--   `GET /api/admin/users` - Get all users
--   `GET /api/admin/doctors` - Get all doctors
--   `GET /api/admin/appointments` - Get all appointments
-
-## 📸 Screenshots
-
-_Coming Soon_
-
-## 🌐 Live Demo
-
-_Coming Soon_
+This project is open source and available under the [MIT License](LICENSE).
