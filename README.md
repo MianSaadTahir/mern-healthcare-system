@@ -42,7 +42,7 @@ Click [here](https://mern-healthcare-system-1a3c.vercel.app/) to view live demo.
 **Frontend:**
 
 - React
-- Tailwind CSS
+- JS
 
 **Deployment:**
 
