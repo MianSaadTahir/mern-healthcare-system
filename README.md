@@ -111,7 +111,7 @@ npm start
 
 ## Documentation
 
-For detailed documentation, please refer to the [Documentation](https://github.com/MianSaadTahir/mern-healthcare-system/tree/main/assets/documentation).
+For detailed documentation, please refer to the [Documentation](https://github.com/MianSaadTahir/mern-healthcare-system/tree/main/public/documentation).
 
 ## Contributing
 
