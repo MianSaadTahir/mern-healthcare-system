@@ -10,6 +10,7 @@ A comprehensive web-based healthcare appointment booking system built with the M
 - [Technologies Used](#technologies-used)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
+- [Documentation](#documentation)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -107,6 +108,10 @@ npm start
 
 - Frontend: `http://localhost:3000`
 - Backend: `http://localhost:5001`
+
+## Documentation
+
+For detailed documentation, please refer to the [Documentation](https://github.com/MianSaadTahir/mern-healthcare-system/tree/main/assets/documentation).
 
 ## Contributing
 
